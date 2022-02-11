@@ -16,7 +16,7 @@ request.onload = () => {
             
             $("#cdata").append(
             "<tr  onclick='showModal()'>"
-            +"<td text='ASDFG'></td>"
+            +"<td text='ASDFG'>"+country.name.official+"</td>"
             +"<td>"+country.capital+"</td>"
             +"<td>"+country.region+"</td>"
             +"<td>"+country.languages+"</td>"
