@@ -11,3 +11,9 @@ for(i = 0; i < titles.length; i++){
     console.log(titles[i]);
 
 }
+var titles = document.getElementsByClassName("title");
+//converting titles into an array and then printing
+//every array item
+Array.from(titles).forEach(function(item){
+    console.log(item);
+})
