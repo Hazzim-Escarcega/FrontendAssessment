@@ -23,3 +23,9 @@ console.log('#page-banner node has child nodes:', banner.hasChildNodes())
 //Cloning a node
 const clonedBanner = banner.cloneNode(true)
 console.log(clonedBanner)
+
+//Traversing the DOM
+console.log('The parent node is: ', bookList.parentNode)
+console.log('The parent element is: ', bookList.parentElement.parentElement)
+
+console.log(bookList.children)
