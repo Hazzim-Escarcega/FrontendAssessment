@@ -29,3 +29,13 @@ console.log('The parent node is: ', bookList.parentNode)
 console.log('The parent element is: ', bookList.parentElement.parentElement)
 
 console.log(bookList.children)
+
+//Dom Traversal (SIBLINGS)
+
+console.log('book-list next sibling is: ', bookList.nextSibling)
+console.log('book-list next Element sibling is: ', bookList.nextElementSibling)
+
+console.log('book-list next previous sibling is: ', bookList.previousSibling)
+console.log('book-list next previous Element sibling is: ', bookList.previousElementSibling)
+
+bookList.previousElementSibling.querySelector('p').innerHTML += '<br/> Too cool for everyone else'
