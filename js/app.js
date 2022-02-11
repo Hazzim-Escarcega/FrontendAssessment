@@ -15,3 +15,11 @@ Array.from(books).forEach(function(book){
 const bookList = document.querySelector("#book-list");
 //bookList.innerHTML = '<h2>Books and more books</h2>'
 bookList.innerHTML += '<p>This is how you add HTML...</p>'
+// DOM Nodes
+const banner = document.querySelector("#page-banner")
+console.log('#page-banner node type is:', banner.nodeType)
+console.log('#page-banner node Name is:', banner.nodeName)
+console.log('#page-banner node has child nodes:', banner.hasChildNodes())
+//Cloning a node
+const clonedBanner = banner.cloneNode(true)
+console.log(clonedBanner)
