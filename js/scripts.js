@@ -1,11 +1,4 @@
 
-function showModal(){
-    var cname = document.getElementById("cname"); 
-    bootbox.alert({
-        message: cname,
-        backdrop: true
-    });
-}
 $(document).ready(function(){
     const request = new XMLHttpRequest();
 request.open("GET", "https://restcountries.com/v3.1/all");
@@ -22,25 +15,13 @@ request.onload = () => {
         cdata.forEach(function(country) {
             
             $("#cdata").append(
-            "<tr onclick='showModal()'>"
-            +"<td id='cname'>"
-            +country.name.official
-            +"</td>"
-            +"<td>"
-            +country.capital
-            +"</td>"
-            +"<td>"
-            +country.region
-            +"</td>"
-            +"<td>"
-            +country.languages
-            +"</td>"
-            +"<td>"
-            +country.population
-            +"</td>"
-            +"<td>"
-            +"<img style='width: 60px; height: 40px' src="+country.flags.svg+">"
-            +"</td>"
+            "<tr  onclick='showModal()'>"
+            +"<td text='ASDFG'></td>"
+            +"<td>"+country.capital+"</td>"
+            +"<td>"+country.region+"</td>"
+            +"<td>"+country.languages+"</td>"
+            +"<td>"+country.population+"</td>"
+            +"<td>"+"<img style='width: 60px; height: 40px' src="+country.flags.svg+">"+"</td>"
             +"</tr>")
         });
     }
