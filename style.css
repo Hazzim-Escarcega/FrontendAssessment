@@ -23,12 +23,58 @@ h1{
     box-sizing: border-box;
 
 }
+#mainFooter{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+
+}
 #sidebar{
     float: left;
     width: 30%;
     padding: 10px;
     border-right:1px solid #333;
     box-sizing: border-box;
+}
+@media (max-width: 600px){
+    #main, #sidebar{
+        width: 100%;
+        float: none;
+        border: none;
+    }
+}
+#pExample{
+    width: 400px ;
+    height: 400px;
+    border: 1px solid #333;
+    position: relative;
+
+
+
+}
+#pExample span:last-child{
+
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+#pExample span:first-child{
+
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+.clearfix{
+    clear: both;
+}
+#fixed{
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    background-color: #125462;
+    padding: 5px;
 }
 /*p{
    border-top: 5px solid gold;
@@ -58,6 +104,9 @@ h1{
 #mainNav{
     background: #ccc;
     color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 #mainNav ul{
     padding: 0;
