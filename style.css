@@ -7,7 +7,11 @@ colors{
     color: rgb(122,12,69);
     color: rgb(122,12,69,1);
 }
-
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.6em;
+}
 h1{
     color: green;
     font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +29,16 @@ h4{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    line-height: 1.6em;
+    border-top: 5px solid gold;
+    border-right: 2px dotted #ff652f;
+    border-bottom: 5px dashed gold;
+    border-left: 2px dotted #ff652f;
+    /*padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;*/
+    padding: 10px 20px 10px 20px;
+    padding: 20px 40px;
+    padding: 50px;
+    padding: 20px;
 }
