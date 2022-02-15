@@ -11,9 +11,9 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.6em;
+    margin: 0;
 }
 h1{
-    color: green;
     font-family: Arial, Helvetica, sans-serif;
 }
 h2{
@@ -41,4 +41,50 @@ p{
     padding: 20px 40px;
     padding: 50px;
     padding: 20px;
+    margin-top: 40px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#mainHeader{
+    background-color: #333;
+    color: white;
+}
+#mainNav{
+    background: #ccc;
+    color: black;
+}
+#mainNav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#mainNav li{
+    display: inline;
+    padding: 5px 10px;
+
+}
+#mainNav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+#mainNav li:hover{
+    background: #aaa;
+}
+#jumbo{
+    background-image: url(./images/img.jpg);
+    background-position: center center;
+    min-height: 200px;
+    text-align: center;
+    
+
+}
+#jumbo h1{
+    color: rgb(44, 44, 44);
+    font-size: 40px;
+    padding-top: 20px;
+    line-height: 1.2em;
 }
