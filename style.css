@@ -10,13 +10,22 @@ colors{
 
 h1{
     color: green;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h2{
     color: #ff652f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h3{
     color: rgb(122,12,69);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h4{
     color: rgb(122,12,69,.3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.6em;
 }
