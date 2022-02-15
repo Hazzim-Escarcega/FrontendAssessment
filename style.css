@@ -1,3 +1,22 @@
+colors{
+    /* HTML COLORS */
+    color: blue;
+    /*HEX COLORS*/
+    color: #ff652f;
+    /*RGB / RGBA COLORS */
+    color: rgb(122,12,69);
+    color: rgb(122,12,69,1);
+}
+
 h1{
     color: green;
+}
+h2{
+    color: #ff652f;
+}
+h3{
+    color: rgb(122,12,69);
+}
+h4{
+    color: rgb(122,12,69,.3);
 }
