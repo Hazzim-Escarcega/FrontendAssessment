@@ -1,3 +1,25 @@
 body {
-  background: #333;
+  background: #ccc;
+  font-family: Monospace;
+  line-height: 2em;
+}
+h1 {
+  border-top: dotted 1px #000;
+  border-bottom: solid 1px #000;
+}
+.primary-text {
+  color: #333;
+}
+.primary-btn {
+  background: rgba(0, 0, 0, 0.877);
+  color: #fff;
+}
+.btn,
+.primary-btn {
+  padding: 10px 15px;
+  border: 0;
+}
+.bordered {
+  border-top: dotted 1px #000;
+  border-bottom: solid 1px #000;
 }
