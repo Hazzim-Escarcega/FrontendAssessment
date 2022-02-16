@@ -4,25 +4,50 @@
 @Secondary-color: rgba(0, 0, 0, 0.877);
 @line-height:1em + 1em;
 
+/*Text color Mixin*/
+.text-color(@a) when (lightness(@a) >= 50%){
+    color:black;
+}
+.text-color(@a) when (lightness(@a) < 50%){
+    color:#fff;
+}
+
 body{
     background: @bg_color;
     font-family: @font-family;
     line-height: @line-height;
 }
-h1{
+h1, h3{
     .bordered
 }
-
+.border-radius(@radius){
+ border-radius: @radius;
+}
 .primary-text{
     color: @Primary-color;
 }
 .primary-btn:extend(.btn){
     background: @Secondary-color;
-    color:#fff
+    .text-color(@Primary-color);
+}
+ul#menu{
+    list-style: none;
+    background-color:lighten(@Secondary-color, 50%);
+    li{
+        padding: 10px 0
+    }
+    a{
+        color: @Secondary-color;
+        text-decoration: none;
+        &:hover{
+            color:#fff;
+        }
+    }
 }
 .btn{
     padding: 10px 15px;
     border: 0;
+    .border-radius(30px)
 }
 .bordered{
     border-top: dotted 1px #000;
