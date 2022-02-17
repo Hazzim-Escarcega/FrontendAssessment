@@ -1,13 +1,6 @@
-    $primary-color: #333;
-    $text-color: #fff;
-    $accent-color: gold;
-
-    $font-weights: (
-        "regular": 400,
-        "medium": 500,
-        "bold": 700
-    );
-
+    @import './resets';
+    @import './variables';
+    
   body {
     background-color: $primary-color;
     color: $text-color;
