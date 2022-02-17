@@ -28,15 +28,23 @@
   }
   .main{
       @include flex-center(row);
-      width: 80%;
+      width: 80% - 40%;
       margin: 0 auto;
 
-      #{&}__para{
+      #{&}__para1{
         font-weight: map-get($font-weights, bold);
-      }
+
       &:hover{
           color: pink;
       }
+    }
+    #{&}__para2{
+        @extend .main__para1;
+
+        &:hover{
+            color: $accent-color;
+        }
+    }
       @include mobile{
           flex-direction: column;
       }
